@@ -1,0 +1,43 @@
+<app-header />
+<section>
+    <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
+        <div>
+          <label for="nome">Nome:</label>
+          <input id="nome" formControlName="nome" type="text" />
+        </div>
+      
+        <div>
+          <label for="cpf">CPF:</label>
+          <input id="cpf" formControlName="cpf" type="text" />
+        </div>
+      
+        <div>
+          <label for="endereco">Endereço:</label>
+          <input id="endereco" formControlName="endereco" type="text" />
+        </div>
+      
+        <div>
+          <label for="telefone">Telefone:</label>
+          <input id="telefone" formControlName="telefone" type="text" />
+        </div>
+      
+        <div>
+          <label for="profissao">Profissão:</label>
+          <input id="profissao" formControlName="profissao" type="text" />
+        </div>
+      
+        <div>
+          <label for="especialidade">Especialidade:</label>
+          <input id="especialidade" formControlName="especialidade" type="text" />
+        </div>
+      
+        <div>
+          <label for="comentarios">Comentários:</label>
+          <textarea id="comentarios" formControlName="comentarios"></textarea>
+        </div>
+      
+        <button type="submit" [disabled]="cadastroForm.invalid">Cadastrar</button>
+      </form>
+      
+</section>
+<app-footer />
