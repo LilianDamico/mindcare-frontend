@@ -4,6 +4,7 @@ import { AboutComponent } from './modules/portfolio/pages/about/about.component'
 import { ContatoComponent } from './modules/portfolio/pages/contato/contato.component';
 import { CadastroComponent } from './modules/portfolio/pages/cadastro/cadastro.component';
 import { LoginComponent } from './modules/portfolio/pages/login/login.component';
+import { CartComponent } from './modules/portfolio/pages/cart/cart.component';
 
 export const routes: Routes = [
     {
@@ -29,5 +30,10 @@ export const routes: Routes = [
     {
         path: 'login',
         component: LoginComponent
+    },
+
+    {
+        path: 'cart',
+        component: CartComponent
     }
 ];
