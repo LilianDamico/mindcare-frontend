@@ -1,5 +1,77 @@
-.encarte5-container {
-    display: flex;
-    width: 250px;
-    height: 300px;
-}
+.card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+  
+    .artigo-destaque {
+      margin-bottom: 24px;
+  
+      h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 8px;
+      }
+  
+      p {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+  
+      a {
+        font-size: 14px;
+        color: #007bff;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .artigos-recentes {
+      .artigo {
+        margin-bottom: 16px;
+  
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 4px;
+          margin-bottom: 8px;
+        }
+  
+        h4 {
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+  
+        p {
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
+  
+        a {
+          font-size: 14px;
+          color: #007bff;
+          text-decoration: none;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  

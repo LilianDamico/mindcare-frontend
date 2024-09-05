@@ -1,5 +1,69 @@
-.encarte3-container {
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+  
+  .use-cases {
     display: flex;
-    width: 400px;
-    height: 200px;
-}
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .use-case {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  
+  .testimonials blockquote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 12px;
+  }
+  
+  .testimonials footer {
+    display: flex;
+    text-align: right;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .use-case-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .case-study-link, .video-link {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .case-study-link:hover, .video-link:hover {
+    text-decoration: underline;
+  }
+  

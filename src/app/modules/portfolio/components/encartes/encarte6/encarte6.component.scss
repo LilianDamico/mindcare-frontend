@@ -1,5 +1,46 @@
-.encarte6-container {
-    display: flex;
-    width: 230px;
-    height: 190px;
-}
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #666666;
+  }
+  
+  .cta-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .guarantee {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #28a745;
+  }
+  
+  .next-steps {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888888;
+  }
+  

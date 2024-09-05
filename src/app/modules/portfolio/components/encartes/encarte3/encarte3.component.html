@@ -1,3 +1,20 @@
-<div class="encarte3-container" >
-    encarte3 works!
-</div>
+<div class="card">
+    <h2>Como Nossos Clientes Usam MindCare</h2>
+    
+    <div class="use-cases">
+      <div class="use-case" *ngFor="let case of useCases">
+        <h3>{{ case.title }}</h3>
+        <p>{{ case.description }}</p>
+        <div class="testimonials">
+          <blockquote *ngFor="let testimonial of case.testimonials">
+            "{{ testimonial.message }}"
+            <footer>- {{ testimonial.author }}</footer>
+          </blockquote>
+        </div>
+        
+        <a [href]="case.caseStudyLink" target="_blank" class="case-study-link">Leia o estudo de caso completo</a>
+        <a [href]="case.videoLink" target="_blank" class="video-link">Veja o vídeo demonstrativo</a>
+      </div>
+    </div>
+  </div>
+  

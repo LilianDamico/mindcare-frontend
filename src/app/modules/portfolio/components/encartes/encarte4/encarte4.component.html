@@ -1,3 +1,12 @@
-<div class="encarte4-container" >
-    encarte4 works!
-</div>
+<div class="testimonial-card" *ngFor="let testimonial of testimonials">
+    <div class="testimonial-image">
+      <img [src]="testimonial.photoUrl" [alt]="testimonial.name">
+    </div>
+    <div class="testimonial-content">
+      <h3>{{ testimonial.name }}</h3>
+      <p class="company">{{ testimonial.company }}</p>
+      <blockquote>{{ testimonial.quote }}</blockquote>
+      <a [href]="testimonial.caseStudyLink" class="case-study-link">Leia o estudo de caso completo</a>
+    </div>
+  </div>
+  

@@ -1,3 +1,19 @@
-<div class="encarte5-container">
-    encarte5 works!
-</div>
+<div class="card">
+    <h2>Mantenha-se Informado com as Últimas Novidades</h2>
+    <div class="artigo-destaque">
+      <h3>Artigo em Destaque</h3>
+      <img src="url-da-imagem-destaque.jpg" alt="Artigo em Destaque">
+      <p>Resumo do artigo em destaque...</p>
+      <a href="link-do-artigo-destaque">Leia mais</a>
+    </div>
+    
+    <div class="artigos-recentes">
+      <div *ngFor="let artigo of artigosRecentes" class="artigo">
+        <img [src]="artigo.thumbnail" alt="{{artigo.titulo}}">
+        <h4>{{artigo.titulo}}</h4>
+        <p>{{artigo.resumo}}</p>
+        <a [href]="artigo.link">Leia mais</a>
+      </div>
+    </div>
+  </div>
+  

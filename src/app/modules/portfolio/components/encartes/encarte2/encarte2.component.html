@@ -1,4 +1,14 @@
-<div class="encarte2-container" >
-    encarte2 works!
-
-</div>
+<div class="card">
+    <h2>O que Tornamos Possível</h2>
+    <ul class="features-list">
+      <li class="feature-item" *ngFor="let feature of features">
+        <div class="icon">{{ feature.icon }}</div>
+        <div class="feature-content">
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.description }}</p>
+          <a href="{{ feature.link }}" class="learn-more">Saiba Mais</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
