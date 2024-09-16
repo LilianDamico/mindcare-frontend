@@ -1,43 +1,43 @@
 <app-header />
-<section>
-    <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
-        <div>
-          <label for="nome">Nome:</label>
-          <input id="nome" formControlName="nome" type="text" />
-        </div>
-      
-        <div>
-          <label for="cpf">CPF:</label>
-          <input id="cpf" formControlName="cpf" type="text" />
-        </div>
-      
-        <div>
-          <label for="endereco">Endereço:</label>
-          <input id="endereco" formControlName="endereco" type="text" />
-        </div>
-      
-        <div>
-          <label for="telefone">Telefone:</label>
-          <input id="telefone" formControlName="telefone" type="text" />
-        </div>
-      
-        <div>
-          <label for="profissao">Profissão:</label>
-          <input id="profissao" formControlName="profissao" type="text" />
-        </div>
-      
-        <div>
-          <label for="especialidade">Especialidade:</label>
-          <input id="especialidade" formControlName="especialidade" type="text" />
-        </div>
-      
-        <div>
-          <label for="comentarios">Comentários:</label>
-          <textarea id="comentarios" formControlName="comentarios"></textarea>
-        </div>
-      
-        <button type="submit" [disabled]="cadastroForm.invalid">Cadastrar</button>
-      </form>
-      
-</section>
+<form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
+  <!-- Campo ID (apenas leitura) -->
+  <label for="id">ID:</label>
+  <input id="id" type="text" formControlName="id" readonly />
+
+  <label for="nome">Nome:</label>
+  <input id="nome" type="text" formControlName="nome" />
+  <div *ngIf="cadastroForm.get('nome')?.invalid && cadastroForm.get('nome')?.touched">
+    Nome é obrigatório e deve ter pelo menos 3 caracteres.
+  </div>
+
+  <label for="cpf">CPF:</label>
+  <input id="cpf" type="text" formControlName="cpf" />
+  <div *ngIf="cadastroForm.get('cpf')?.invalid && cadastroForm.get('cpf')?.touched">
+    CPF inválido.
+  </div>
+
+  <label for="endereco">Endereço:</label>
+  <input id="endereco" type="text" formControlName="endereco" />
+  <div *ngIf="cadastroForm.get('endereco')?.invalid && cadastroForm.get('endereco')?.touched">
+    Endereço é obrigatório.
+  </div>
+
+  <label for="telefone">Telefone:</label>
+  <input id="telefone" type="text" formControlName="telefone" />
+  <div *ngIf="cadastroForm.get('telefone')?.invalid && cadastroForm.get('telefone')?.touched">
+    Telefone inválido.
+  </div>
+
+  <label for="profissao">Profissão:</label>
+  <input id="profissao" type="text" formControlName="profissao" />
+
+  <label for="especialidade">Especialidade:</label>
+  <input id="especialidade" type="text" formControlName="especialidade" />
+
+  <label for="comentarios">Comentários:</label>
+  <textarea id="comentarios" formControlName="comentarios"></textarea>
+
+  <button type="submit" [disabled]="cadastroForm.invalid">Enviar</button>
+</form>
+
 <app-footer />
