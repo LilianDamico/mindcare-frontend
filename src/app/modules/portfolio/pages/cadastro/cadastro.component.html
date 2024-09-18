@@ -16,6 +16,12 @@
     CPF inválido.
   </div>
 
+  <label for="registro">Registro Profissional:</label>
+  <input id="registro" type="text" formControlName="registro" />
+  <div *ngIf="cadastroForm.get('registro')?.invalid && cadastroForm.get('registro')?.touched">
+    Registro inválido.
+  </div>
+
   <label for="endereco">Endereço:</label>
   <input id="endereco" type="text" formControlName="endereco" />
   <div *ngIf="cadastroForm.get('endereco')?.invalid && cadastroForm.get('endereco')?.touched">

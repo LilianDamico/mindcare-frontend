@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CommonModule } from '@angular/common'; // Importando CommonModule para usar *ngIf
+import { CommonModule } from '@angular/common'; 
 import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 
@@ -8,8 +8,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
   selector: 'app-cadastro',
   standalone: true,
   imports: [
-    ReactiveFormsModule,  // Importando ReactiveFormsModule
-    CommonModule,         // Importando CommonModule para diretivas como *ngIf e *ngFor
+    ReactiveFormsModule,  
+    CommonModule,         
     HeaderComponent,
     FooterComponent,
   ],
@@ -18,7 +18,6 @@ import { FooterComponent } from '../../components/footer/footer.component';
 })
 export class CadastroComponent {
   cadastroForm: FormGroup;
-  id: any;
 
   constructor(private fb: FormBuilder) {
     this.cadastroForm = this.fb.group({
