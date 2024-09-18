@@ -1,8 +1,6 @@
 <app-header />
 <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
-  <!-- Campo ID (apenas leitura) -->
-  <label for="id">ID:</label>
-  <input id="id" type="text" formControlName="id" readonly />
+
 
   <label for="nome">Nome:</label>
   <input id="nome" type="text" formControlName="nome" />
@@ -27,6 +25,13 @@
   <div *ngIf="cadastroForm.get('endereco')?.invalid && cadastroForm.get('endereco')?.touched">
     Endereço é obrigatório.
   </div>
+
+  <label for="email">e-mail</label>
+  <input id="email" type="email" formControlName="email  />
+  <div *ngIf="cadastroForm.get('email')?.invalid && cadastroForm.get('email')?.touched">
+    e-mail é obrigatório
+  </div>
+    
 
   <label for="telefone">Telefone:</label>
   <input id="telefone" type="text" formControlName="telefone" />
