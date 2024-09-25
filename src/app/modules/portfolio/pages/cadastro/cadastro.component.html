@@ -1,8 +1,6 @@
 <app-header />
 <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
-  <!-- Campo ID (apenas leitura) -->
-  <label for="id">ID:</label>
-  <input id="id" type="text" formControlName="id" readonly />
+
 
   <label for="nome">Nome:</label>
   <input id="nome" type="text" formControlName="nome" />
