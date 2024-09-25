@@ -15,7 +15,7 @@
   </div>
 
   <label for="email">e-mail:</label>
-  <input id="email" type="email" formControlName="email" />
+  <input id="email" type="text" formControlName="email" />
   <div *ngIf="cadastroForm.get('cpf')?.invalid && cadastroForm.get('email')?.touched">
     e-mail inválido.
   </div>
@@ -45,7 +45,7 @@
   <input id="especialidade" type="text" formControlName="especialidade" />
 
   <label for="senha">Senha:</label>
-  <input id="password" type="password" formControlName="password" />
+  <input id="password" type="text" formControlName="password" />
   <div *ngIf="cadastroForm.get('password')?.invalid && cadastroForm.get('password')?.touched">
     CPF inválido.
   </div>
