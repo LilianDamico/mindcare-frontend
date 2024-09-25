@@ -45,9 +45,11 @@ export interface CadastroComponentData {
   id: number;
   nome: string;
   cpf: string;
+  email: string;
   endereco: string;
   telefone: string;
   profissao: string;
   especialidade: string;
+  password: string;
   comentarios?: string;
 }

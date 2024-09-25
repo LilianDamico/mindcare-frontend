@@ -27,7 +27,7 @@ export class LoginComponent {
   onSubmit(): void {
     if (this.loginForm.valid) {
       console.log(this.loginForm.value);
-      // Aqui você pode adicionar a lógica para autenticar o usuário
+  
     }
   }
 }

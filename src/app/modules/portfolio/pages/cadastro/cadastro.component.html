@@ -16,6 +16,12 @@
     CPF inválido.
   </div>
 
+  <label for="email">e-mail:</label>
+  <input id="email" type="email" formControlName="email" />
+  <div *ngIf="cadastroForm.get('cpf')?.invalid && cadastroForm.get('email')?.touched">
+    e-mail inválido.
+  </div>
+
   <label for="registro">Registro Profissional:</label>
   <input id="registro" type="text" formControlName="registro" />
   <div *ngIf="cadastroForm.get('registro')?.invalid && cadastroForm.get('registro')?.touched">
@@ -39,6 +45,12 @@
 
   <label for="especialidade">Especialidade:</label>
   <input id="especialidade" type="text" formControlName="especialidade" />
+
+  <label for="senha">Senha:</label>
+  <input id="password" type="password" formControlName="password" />
+  <div *ngIf="cadastroForm.get('password')?.invalid && cadastroForm.get('password')?.touched">
+    CPF inválido.
+  </div>
 
   <label for="comentarios">Comentários:</label>
   <textarea id="comentarios" formControlName="comentarios"></textarea>
