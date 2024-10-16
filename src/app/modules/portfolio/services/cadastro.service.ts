@@ -7,7 +7,7 @@ import { Cadastro } from '../../models/cadastro.model';
   providedIn: 'root'
 })
 export class CadastroService {
-  private apiUrl = 'http://localhost:8080/mindcare'; 
+  private apiUrl = 'https://mindcare-vert.vercel.app/'; 
 
   constructor(private http: HttpClient) {}
 
